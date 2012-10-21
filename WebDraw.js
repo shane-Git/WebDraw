@@ -320,7 +320,7 @@ function BresenhamEllipse(x0,y0,rx,ry)
 				if(rySquare * xDraw >= rxSquare * yDraw)
 				{
 					stage = 1;
-					p = rySquare * (xDraw + 0.5) * (xDraw + 0.5) + rxSquare * yDraw * yDraw - rxSquare * rySquare;
+					p = rySquare * (xDraw + 1) * (xDraw + 1) + rxSquare * (yDraw-0.5) * (yDraw-0.5) - rxSquare * rySquare;
 					return;
 				}
 				xDraw++;
